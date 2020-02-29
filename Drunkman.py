@@ -15,7 +15,7 @@ def Drunk(Distance,Energy):
             else:
                 Position = Position + 1
             print("Home"+"_"*(Position-1)+"O"+"_"*(Distance-Position)+"Pub")
-            time.sleep(0.2)
+            time.sleep(0.1)
             Energy = Energy - 1
             if Energy == 0:
                 print("You Fell Asleep On The Way")
