@@ -7,7 +7,7 @@ def Circle(step):
     turtle.sety((step*360/(2*math.pi)))
     turtle.pendown()
     for x in range (360):
-        turtle.forward(step)
+        turtle.fd(step)
         turtle.right(1)
 
 def Square(step):
@@ -16,12 +16,12 @@ def Square(step):
     turtle.setx(step*-50)
     turtle.pendown()
     for x in range (4):
-        turtle.forward(step*100)
+        turtle.fd(step*100)
         turtle.left(90)
 
 def Spiral(step):
-    for x in range (360):
-        turtle.forward(step)
+    for x in range (3,364):
+        turtle.fd(step)
         turtle.left(240/(x+1))
 
 def Triangle(step):
@@ -30,7 +30,7 @@ def Triangle(step):
     turtle.sety((math.sqrt(((step*100)**2)-((step*50)**2)))*-(1/3))
     turtle.pendown()
     for x in range (3):
-        turtle.forward(step*100)
+        turtle.fd(step*100)
         turtle.left(120)
 
 def Hexagon(step):
@@ -39,7 +39,7 @@ def Hexagon(step):
     turtle.sety((math.sqrt(((step*50)**2)-((step*25)**2)))*-1)
     turtle.pendown()
     for x in range (6):
-        turtle.forward(step*50)
+        turtle.fd(step*50)
         turtle.left(60)
 
 
